@@ -26,11 +26,9 @@ class Post:
         location_surface = font.render(f"📍 {self.location}", True, LIGHT_GRAY)
         screen.blit(location_surface, (LOCATION_TEXT_X_POS, LOCATION_TEXT_Y_POS))
 
-        # Display Likes
         likes_surface = font.render(f"❤️ {self.likes} Likes", True, WHITE)
         screen.blit(likes_surface, (LIKE_TEXT_X_POS, LIKE_TEXT_Y_POS))
 
-        # Display Comments
         self.display_comments()
 
     def display_comments(self):
