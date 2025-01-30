@@ -47,3 +47,10 @@ class Post:
             self.comments[position_index].display(i) 
             position_index += 1
 
+    def like_add(self):
+        self.likes += 1
+
+    def comment_add(self, text):
+        new_comment = COMMENT_TEXT_SIZE(text)
+        self.comments.append(new_comment)
+
