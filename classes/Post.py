@@ -69,3 +69,4 @@ class Post:
         def add_comments(text):
             self.comments.append(text)
 
+
